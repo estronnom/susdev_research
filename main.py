@@ -38,9 +38,9 @@ def process_year(year_dataset: Iterable[list[str]]) -> None:
         )
 
     plt.plot(([0, 0], [1, 1]))
-    plt.title('Кривая Лоренца')
-    plt.xlabel('Кумулятивная доля населения')
-    plt.ylabel('Кумулятивная доля дохода')
+    plt.title('Lorenz Curve')
+    plt.xlabel('Cumulative share of population')
+    plt.ylabel('Cumulative share of income')
     plt.legend(loc="upper left")
     plt.xlim(0, 1)
     plt.ylim(0, 1)
